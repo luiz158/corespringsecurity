@@ -47,8 +47,6 @@ public class AjaxSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticationEntryPoint(new AjaxLoginAuthenticationEntryPoint())
                 .accessDeniedHandler(ajaxAccessDeniedHandler())
         ;
-//        http.csrf().disable();
-
         ajaxConfigurer(http);
     }
 
