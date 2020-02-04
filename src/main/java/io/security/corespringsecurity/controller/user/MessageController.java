@@ -16,7 +16,7 @@ public class MessageController {
 
 	@GetMapping(value="/api/messages")
 	@ResponseBody
-	public String ajaxMessages(){
+	public String apiMessages(){
 
 		return "messages ok";
 	}
