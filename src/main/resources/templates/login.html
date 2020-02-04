@@ -22,8 +22,8 @@
             dataType: "json",
             beforeSend : function(xhr){
                 xhr.setRequestHeader(csrfHeader, csrfToken);
-                xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-                xhr.setRequestHeader("Content-type","application/json");
+                // xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+                // xhr.setRequestHeader("Content-type","application/json");
             },
             success: function (data) {
                 console.log(data);
