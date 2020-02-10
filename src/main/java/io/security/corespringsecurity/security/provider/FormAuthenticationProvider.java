@@ -29,7 +29,6 @@ public class FormAuthenticationProvider implements AuthenticationProvider {
     }
 
     @Override
-    @Transactional
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 
         String loginId = authentication.getName();
